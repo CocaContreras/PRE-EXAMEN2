@@ -10,7 +10,7 @@ router.get('/api/usuarios/onebyid/:id', Usuario.findById);
 router.put('/api/usuarios/update/:id', Usuario.update);
 router.delete('/api/usuarios/delete/:id', Usuario.delete);
 
-const Libro = require('..controllers/libro.controller');
+const Libro = require('../controllers/libro.controller.js');
 
 //Rutas para el controlador de Libro
 
@@ -20,7 +20,7 @@ router.get('/api/libros/onebyid/:id', Libro.findById);
 router.put('/api/libros/update/:id', Libro.update);
 router.delete('/api/libros/delete/:id', Libro.delete);
 
-const Autor = require('../controllers/autor.controller');
+const Autor = require('../controllers/autor.controller.js');
 
 // Rutas para el controlador de Autor
 
